@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Dynamic - String - Integer</title>
+</head>
+    <body>
+        <p3>========== dynamic ==========</p3>
+        <p id="dynamic"></p>
+
+        <script>
+            let x;
+            x = 5; //ketika variabel x tidak ada value yang di berikan maka muncul pesan undefined 
+            x = "john"; //Ketika baris ini di block maka yang keluar adalah variabel sebelumnya (variabel x = 5)
+            document.getElementById("dynamic").innerHTML = "type data dynamic x adalah " + x;
+        </script>
+        
+        <p3>=========== string ===========</p3>
+        <p id="string"></p>
+
+        <script>
+            let answer1 = "ini adalah String 1";
+            let answer2 = "ini adalah 'String 2'";
+            let answer3 = 'ini adalah "string 3"';
+
+            document.getElementById("string").innerHTML = 
+            answer1 + "<br>" + 
+            answer2 + "<br>" + 
+            answer3 ;
+        </script>
+
+        <p3>=========== integer ===========</p3>
+        <p id="int"></p>
+
+        <script>
+            let a = 22;
+
+            document.getElementById("int").innerHTML = "nilai a adalah " + a;
+        </script>
+       
+    </body>
+</html>
